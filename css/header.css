@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  width: 100%;
+  height: 0;
+  padding-bottom: 100%;
+}
+#mainHeader1 {
+  text-align: center;
+}
+#header {
+  width: 100%;
+  height: 50px;
+}
+#malrangLogo {
+  width: 50px;
+  height: 50px;
+  margin-left: 20%;
+  border-left: 1px solid #ffb74d;
+  border-right: 1px solid #ffb74d;
+  margin-bottom: 1px;
+}
+#imgText {
+  display: inline-block;
+  font-size: 2em;
+  overflow: hidden;
+  margin-bottom: 5px;
+  margin-left: 5%;
+  font-family: "Moirai One", cursive;
+}
+#members {
+  width: 200px;
+  float: right;
+  margin-left: 15%;
+  margin-top: 15px;
+}
+#members li {
+  overflow: hidden;
+  float: left;
+  margin-right: 10px;
+}
+.mText {
+  text-decoration: none;
+  color: #000;
+  font-size: 0.8em;
+}
+.mText:hover {
+  font-size: 1em;
+}

@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+#menu {
+  background-color: #ffb74d;
+}
+.menuItem {
+  width: 40%;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.menuItem > li {
+  width: 20%;
+  float: left;
+  text-align: center;
+  line-height: 40px;
+  background-color: #ffb74d;
+}
+.subMenu > li {
+  line-height: 50px;
+  background-color: #ffb74d;
+}
+.subMenu {
+  height: 0;
+  overflow: hidden;
+}
+.menuItem {
+  text-align: center;
+  background-color: #ffb74d;
+}
+.menuItem > li:hover {
+  transition-duration: 0.5s;
+}
+.menuItem > li:hover .subMenu {
+  height: 250px; /*서브메뉴 li한개의 높이 50*5*/
+  transition-duration: 1s;
+}
+li {
+  list-style: none;
+}
+.aText {
+  text-decoration: none;
+  color: #000;
+  background-color: #ffb74d;
+}
+.aText:hover {
+  font-size: 1.1em;
+}
+/*main1*/
+/* .mainSide {
+  width: 14%;
+  height: 1800px;
+  background-color: #000;
+}
+#mainSide1 {
+  float: left;
+}
+#mainSide2 {
+  float: right;
+} */
+#mainVideo {
+  text-align: center;
+  background-color: #000;
+  margin-bottom: 20px;
+}
+/*main2*/
+#mainPic {
+  width: 100%;
+  height: 300px;
+}
+.mainImg {
+  width: 50%;
+  height: 100%;
+  display: block;
+  margin: auto;
+  filter: drop-shadow(6px 6px 6px #c3c3c3);
+  border-radius: 5px;
+}
+#mainImgText {
+  position: absolute;
+  opacity: 0;
+  font-size: 2.5em;
+}
+#mainImg:hover {
+  cursor: pointer;
+  opacity: 0.3;
+}
+.btn_img{
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  font-size: 30px;
+  border: none;
+  background-color: rgb(255, 255, 255, 0);
+}
+.btn_img:hover{
+  cursor: pointer;
+  font-size: 35px;
+  font-weight: bold;
+}
+#btn_left{
+  margin-left: 18%;
+  margin-top: 12%;
+}
+#btn_right{
+  margin-left: 76%;
+  margin-top: 12%;
+}

@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.footer {
+  background-color: #000;
+  color: #fff;
+  float: bottom;
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+  height: 50px;
+}
+.innerText {
+  margin-top: 5px;
+}
+#git_link {
+  color: #fff;
+}
