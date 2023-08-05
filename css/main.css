@@ -48,6 +48,7 @@ li {
   text-decoration: none;
   color: #000;
   background-color: #ffb74d;
+  font-size: 0.8em;
 }
 .aText:hover {
   font-size: 1.1em;
@@ -72,7 +73,7 @@ li {
 /*main2*/
 #mainPic {
   width: 100%;
-  height: 300px;
+  height: 400px;
 }
 .mainImg {
   width: 50%;
@@ -91,7 +92,7 @@ li {
   cursor: pointer;
   opacity: 0.3;
 }
-.btn_img{
+.btn_img {
   width: 50px;
   height: 50px;
   position: absolute;
@@ -99,16 +100,55 @@ li {
   border: none;
   background-color: rgb(255, 255, 255, 0);
 }
-.btn_img:hover{
+.btn_img:hover {
   cursor: pointer;
   font-size: 35px;
   font-weight: bold;
 }
-#btn_left{
+#btn_left {
   margin-left: 18%;
   margin-top: 12%;
 }
-#btn_right{
+#btn_right {
   margin-left: 76%;
   margin-top: 12%;
+}
+/*discord*/
+#malrangDiscord {
+  width: 100%;
+  height: 200px;
+}
+#innerDis {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  text-align: center;
+  position: relative;
+}
+#discord {
+  width: 50%;
+  height: 100%;
+  border-radius: 5px;
+  filter: drop-shadow(6px 6px 6px #c3c3c3);
+  vertical-align: middle;
+}
+#disText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  font-size: 1.3em;
+  font-family: monospace;
+  text-align: center;
+  color: #000;
+  font-weight: bold;
+  display: none;
+}
+#discord:hover {
+  cursor: pointer;
+  opacity: 0.3;
+}
+#discord:hover + #disText {
+  display: block;
 }

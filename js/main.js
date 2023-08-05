@@ -9,6 +9,7 @@ $(document).ready(function () {
   var imgList = ["1.jpeg", "2.jpeg", "3.jpeg", "4.jpeg"];
   var $imgBtn_right = $("#btn_right");
   var $imgBtn_left = $("#btn_left");
+  var $imgDiscord = $("#discord");
 
   $imgBtn_right.click(function () {
     i++;
@@ -26,5 +27,10 @@ $(document).ready(function () {
     }
     var imgName = imgList[i];
     $imgBanner.attr("src", "../images/" + imgName);
+  });
+
+  //discord 이미지 클릭시
+  $imgDiscord.click(function () {
+    window.location.assign("https://discord.gg/wuqpQAaF");
   });
 });
