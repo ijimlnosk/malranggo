@@ -1,4 +1,6 @@
 $(document).ready(function () {
+  $("#headers").load("./header.html");
+
   var $imgClick = $("#mainImg");
   $("#mainImg").click(function () {
     window.location.assign("../html/imagePage.html");
@@ -10,6 +12,7 @@ $(document).ready(function () {
   var $imgBtn_right = $("#btn_right");
   var $imgBtn_left = $("#btn_left");
   var $imgDiscord = $("#discord");
+  var $imgKakao = $("#kakao");
 
   $imgBtn_right.click(function () {
     i++;
@@ -32,5 +35,10 @@ $(document).ready(function () {
   //discord 이미지 클릭시
   $imgDiscord.click(function () {
     window.location.assign("https://discord.gg/wuqpQAaF");
+  });
+
+  //kakao 이미지 클릭시
+  $imgKakao.click(function () {
+    window.location.assign("https://open.kakao.com/o/gVGRgQee");
   });
 });

@@ -7,52 +7,6 @@ body {
   width: 100%;
   height: 100%;
 }
-#menu {
-  background-color: #ffb74d;
-}
-.menuItem {
-  width: 40%;
-  overflow: hidden;
-  margin: 0 auto;
-}
-.menuItem > li {
-  width: 20%;
-  float: left;
-  text-align: center;
-  line-height: 40px;
-  background-color: #ffb74d;
-}
-.subMenu > li {
-  line-height: 50px;
-  background-color: #ffb74d;
-}
-.subMenu {
-  height: 0;
-  overflow: hidden;
-}
-.menuItem {
-  text-align: center;
-  background-color: #ffb74d;
-}
-.menuItem > li:hover {
-  transition-duration: 0.5s;
-}
-.menuItem > li:hover .subMenu {
-  height: 250px; /*서브메뉴 li한개의 높이 50*5*/
-  transition-duration: 1s;
-}
-li {
-  list-style: none;
-}
-.aText {
-  text-decoration: none;
-  color: #000;
-  background-color: #ffb74d;
-  font-size: 0.8em;
-}
-.aText:hover {
-  font-size: 1.1em;
-}
 /*main1*/
 /* .mainSide {
   width: 14%;
@@ -68,12 +22,41 @@ li {
 #mainVideo {
   text-align: center;
   background-color: #000;
+  position: relative;
+  margin-top: 20px;
   margin-bottom: 20px;
+  /* position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden; */
 }
+#videoLeftSide {
+  width: 15%;
+  height: 620px;
+  background-color: #fff;
+  position: absolute;
+}
+#videoRightSide {
+  width: 15%;
+  height: 620px;
+  background-color: #fff;
+  margin-left: 85%;
+  margin-bottom: 100px;
+  position: absolute;
+}
+/* #mainVideo iframe,
+#mainVideo object,
+#mainVideo embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+} */
 /*main2*/
 #mainPic {
   width: 100%;
-  height: 400px;
+  height: 1200px;
 }
 .mainImg {
   width: 50%;
@@ -82,6 +65,7 @@ li {
   margin: auto;
   filter: drop-shadow(6px 6px 6px #c3c3c3);
   border-radius: 5px;
+  border: 1px solid #ccc;
 }
 #mainImgText {
   position: absolute;
@@ -131,10 +115,11 @@ li {
   border-radius: 5px;
   filter: drop-shadow(6px 6px 6px #c3c3c3);
   vertical-align: middle;
+  margin-top: 20px;
 }
 #disText {
   position: absolute;
-  top: 50%;
+  top: 60%;
   left: 50%;
   width: 100%;
   transform: translate(-50%, -50%);
@@ -150,5 +135,45 @@ li {
   opacity: 0.3;
 }
 #discord:hover + #disText {
+  display: block;
+}
+
+#malrang-openKakao {
+  width: 100%;
+  height: 200px;
+}
+#innerKakao {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  text-align: center;
+  position: relative;
+}
+#kakao {
+  width: 50%;
+  height: 100%;
+  border-radius: 5px;
+  filter: drop-shadow(6px 6px 6px #c3c3c3);
+  vertical-align: middle;
+  margin-top: 40px;
+}
+#kakaoText {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  font-size: 1.3em;
+  font-family: monospace;
+  text-align: center;
+  color: #000;
+  font-weight: bold;
+  display: none;
+}
+#kakao:hover {
+  cursor: pointer;
+  opacity: 0.3;
+}
+#kakao:hover + #kakaoText {
   display: block;
 }
