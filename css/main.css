@@ -1,35 +1,23 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
+
 html,
 body {
   width: 100%;
   height: 100%;
 }
-/*main1*/
-/* .mainSide {
-  width: 14%;
-  height: 1800px;
-  background-color: #000;
-}
-#mainSide1 {
-  float: left;
-}
-#mainSide2 {
-  float: right;
-} */
+/* youtube */
 #mainVideo {
   text-align: center;
   background-color: #000;
   position: relative;
   margin-top: 20px;
   margin-bottom: 20px;
-  /* position: relative;
-  padding-bottom: 56.25%;
-  height: 0;
-  overflow: hidden; */
 }
+/* youtube side 검정 배경 지우기 용도 */
 #videoLeftSide {
   width: 15%;
   height: 620px;
@@ -44,16 +32,9 @@ body {
   margin-bottom: 100px;
   position: absolute;
 }
-/* #mainVideo iframe,
-#mainVideo object,
-#mainVideo embed {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-} */
+
 /*main2*/
+/* main image */
 #mainPic {
   width: 100%;
   height: 1200px;
@@ -64,18 +45,22 @@ body {
   display: block;
   margin: auto;
   filter: drop-shadow(6px 6px 6px #c3c3c3);
-  border-radius: 5px;
+  border-radius: 16px;
   border: 1px solid #ccc;
 }
+/* main image Text */
 #mainImgText {
   position: absolute;
   opacity: 0;
   font-size: 2.5em;
 }
+/* main image hover */
 #mainImg:hover {
   cursor: pointer;
   opacity: 0.3;
 }
+
+/* image button */
 .btn_img {
   width: 50px;
   height: 50px;
@@ -97,6 +82,7 @@ body {
   margin-left: 76%;
   margin-top: 12%;
 }
+
 /*discord*/
 #malrangDiscord {
   width: 100%;
@@ -112,11 +98,12 @@ body {
 #discord {
   width: 50%;
   height: 100%;
-  border-radius: 5px;
+  border-radius: 16px;
   filter: drop-shadow(6px 6px 6px #c3c3c3);
   vertical-align: middle;
   margin-top: 20px;
 }
+/* discord Text */
 #disText {
   position: absolute;
   top: 60%;
@@ -130,6 +117,7 @@ body {
   font-weight: bold;
   display: none;
 }
+/* discord hover */
 #discord:hover {
   cursor: pointer;
   opacity: 0.3;
@@ -138,6 +126,7 @@ body {
   display: block;
 }
 
+/* kakao */
 #malrang-openKakao {
   width: 100%;
   height: 200px;
@@ -152,11 +141,12 @@ body {
 #kakao {
   width: 50%;
   height: 100%;
-  border-radius: 5px;
+  border-radius: 16px;
   filter: drop-shadow(6px 6px 6px #c3c3c3);
   vertical-align: middle;
   margin-top: 40px;
 }
+/* kakao Text */
 #kakaoText {
   position: absolute;
   top: 70%;
@@ -170,6 +160,7 @@ body {
   font-weight: bold;
   display: none;
 }
+/* kakao hover */
 #kakao:hover {
   cursor: pointer;
   opacity: 0.3;

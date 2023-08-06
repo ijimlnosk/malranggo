@@ -5,7 +5,7 @@ body {
   height: 100%;
 }
 #wrapper {
-  min-height: 0%;
+  min-height: calc(100vh - 100px);
   position: relative;
 }
 #wrapper-content {

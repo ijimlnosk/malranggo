@@ -1,8 +1,11 @@
 $(document).ready(function () {
-  $("#headers").load("./header.html");
+  var $imgLogo = $("#malrangLogo");
+  $imgLogo.click(function () {
+    window.location.assign("../html/main.html");
+  });
 
   var $imgClick = $("#mainImg");
-  $("#mainImg").click(function () {
+  $imgClick.click(function () {
     window.location.assign("../html/imagePage.html");
   });
 
