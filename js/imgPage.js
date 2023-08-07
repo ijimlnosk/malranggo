@@ -6,7 +6,7 @@ $(document).ready(function () {
 
   var imgNum = 0;
   var imgCount = 0;
-  var arrImg = ["1", "2", "3", "4"];
+  var arrImg = ["1", "2", "3", "4", "5"];
   var $imgPageImg = $("#imgPage-img1");
   var $btnP = $("#btnP");
 
